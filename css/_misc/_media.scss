@@ -1,0 +1,84 @@
+@media (max-width: 770px)
+{
+    .error404 {
+        padding: 50px;
+        text-align: center;
+        &-header {
+            position: relative;
+            .error {
+                @include montserrat-bold;
+                font-size: 8rem;
+            }
+            .over {
+                display: none;
+            }
+        }
+        .input-group-text
+        {
+            display: block;
+        }
+    &-body {
+        button {
+            display: none;
+        }
+    }
+   }
+   .header {
+    &-top-menu {
+        .logo-display {
+            display: none;
+            }
+        .social-media {
+            display: none;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 986px)
+{  
+    .slider img {
+        width: 345px;
+        height: 220px;
+    }
+    .sign-up {
+        display: none;
+    }
+    .button-sign-up
+    {
+        display: block;
+        margin: 7.5rem auto 1rem;
+        @include hind-medium;
+        font-size: 0.85rem;
+        background: $black;
+        color: $white;
+        padding: .6rem 1.75rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &:hover {
+            background: $white;
+            transition: .5s ease;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .slider { 
+        display: none;
+    }
+    .header-top-menu {
+        min-height: 10px;
+    }
+    .popup-button {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    .last-post-img {
+        display: none;
+    }
+}
